@@ -10,7 +10,7 @@
 uint16_t a = 0;
 uint16_t range = 300;
 uint16_t locked = 0;
-uint16_t c = 0;
+uint8_t c = 0;
 uint32_t xPSR = 0;
 
 int main (void)
