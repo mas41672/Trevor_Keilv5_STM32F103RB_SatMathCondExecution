@@ -21,8 +21,8 @@ register unsigned int apsr __asm("apsr");
 	{
 		for(a=0;a<range;a++)					//a goes from 0 to 300
 		{
-			c = a;
-		//	c = __SSAT	(a, 9);				//c will saturate at 255
+//			c = a;
+			c = __SSAT	(a, 9);				//c will saturate at 255
 		}
 /*	xPSR = 	__get_APSR ();
 		if(xPSR&Q_FLAG)	
