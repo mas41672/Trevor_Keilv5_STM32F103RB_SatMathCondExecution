@@ -24,13 +24,12 @@ register unsigned int apsr __asm("apsr");
 //			c = a;
 			c = __SSAT	(a, 9);				//c will saturate at 255
 		}
-/*	xPSR = 	__get_APSR ();
+  	xPSR = 	__get_APSR ();
 		if(xPSR&Q_FLAG)	
 		{															//Using Compiler optimisation level 3, the if, then, else statement 
 			range--;										//will be constructed using conditional instructions
 		}	
-		apsr = apsr&~Q_FLAG;
-*/	
+		apsr = apsr&~Q_FLAG;	
 	}
 }
 
